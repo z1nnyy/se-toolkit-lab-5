@@ -153,7 +153,7 @@ We refer to your fork as `fork` and to the original repo as `upstream` (выше
 
    Wait for the services to start. You should see log output from the `app`, `postgres`, `pgadmin`, and `caddy` containers.
 
-   <details><summary>Troubleshooting</summary>
+   <details><summary><b>Troubleshooting (click to open)</b></summary>
 
    <h4>Port conflict (<code>port is already allocated</code>)</h4>
 
@@ -274,7 +274,7 @@ We refer to your fork as `fork` and to the original repo as `upstream` (выше
    postgres   Up 55 seconds (healthy)
    ```
 
-   <details><summary>Troubleshooting</summary>
+   <details><summary><b>Troubleshooting (click to open)</b></summary>
 
    <h4>Port conflict (<code>port is already allocated</code>)</h4>
 

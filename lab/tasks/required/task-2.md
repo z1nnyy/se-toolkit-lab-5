@@ -202,7 +202,7 @@ Query logic:
    ===================== 20 passed in X.XXs =====================
    ```
 
-   <details><summary>Troubleshooting</summary>
+   <details><summary><b>Troubleshooting (click to open)</b></summary>
 
    <h4>Some tests still fail</h4>
 

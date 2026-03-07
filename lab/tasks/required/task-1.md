@@ -257,7 +257,7 @@ The code stubs in `backend/app/etl.py` contain detailed TODOs.
 
    The exact numbers depend on how many check results exist in the autochecker.
 
-   <details><summary>Troubleshooting</summary>
+   <details><summary><b>Troubleshooting (click to open)</b></summary>
 
    <h4>401 Unauthorized from the autochecker API</h4>
 

@@ -247,7 +247,7 @@ Title: `[Task] Dashboard Front-end`
 5. Connect with your API key.
 6. Verify the Dashboard page shows charts.
 
-   <details><summary>Troubleshooting</summary>
+   <details><summary><b>Troubleshooting (click to open)</b></summary>
 
    <h4>Charts do not render</h4>
 
