@@ -1,61 +1,170 @@
+:root {
+  color: #102542;
+  background:
+    radial-gradient(circle at top, #d7f9f1 0%, #f5f3f0 42%, #f8f8ff 100%);
+  font-family:
+    "Avenir Next", "Segoe UI", sans-serif;
+}
+
 body {
-  font-family: sans-serif;
-  padding: 2rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(16, 37, 66, 0.08);
 }
 
 th,
 td {
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(16, 37, 66, 0.08);
   text-align: left;
 }
 
 th {
-  background: #f5f5f5;
+  background: rgba(33, 104, 105, 0.12);
 }
-
-tr:nth-child(even) {
-  background: #fafafa;
-}
-
-/* Token form */
 
 .token-form {
-  max-width: 360px;
+  max-width: 420px;
+  margin: 12vh auto 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(16, 37, 66, 0.12);
 }
 
-.token-form input {
+.token-form input,
+.dashboard-toolbar select {
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.token-form button {
-  padding: 0.5rem 1.25rem;
-}
-
-/* Header with disconnect */
-
-.app-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  padding: 0.75rem 0.9rem;
   margin-bottom: 1rem;
+  border: 1px solid rgba(16, 37, 66, 0.15);
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: white;
 }
 
-.app-header h1 {
-  margin: 0;
+.token-form button,
+.nav-button,
+.btn-disconnect {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  background: #1f3c88;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button {
+  background: rgba(31, 60, 136, 0.12);
+  color: #1f3c88;
+}
+
+.nav-button.active {
+  background: #216869;
+  color: white;
 }
 
 .btn-disconnect {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
+  background: #b23a48;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.app-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: #216869;
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.dashboard-page {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 260px;
+}
+
+.lab-picker {
+  font-weight: 700;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.dashboard-card {
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(16, 37, 66, 0.08);
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+}
+
+.chart-shell {
+  height: 320px;
+}
+
+.dashboard-table-card {
+  overflow-x: auto;
+}
+
+@media (max-width: 860px) {
+  .app-header {
+    flex-direction: column;
+  }
+
+  .app-nav {
+    justify-content: flex-start;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
 }
