@@ -1,5 +1,5 @@
 import { useState, useEffect, useReducer, FormEvent } from 'react'
-import { Dashboard } from './Dashboard.tsx'
+import { Dashboard } from './Dashboard'
 import './App.css'
 
 const STORAGE_KEY = 'api_key'
